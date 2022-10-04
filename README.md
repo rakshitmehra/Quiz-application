@@ -1,4 +1,3 @@
- 
 
 #                                                    Hacktoberfest2022
 ![image](https://user-images.githubusercontent.com/99472914/192144059-5cd0b329-f238-474b-b475-7385eaa35d05.png)
@@ -17,7 +16,7 @@ If you want to practice to make a pull request, follow the CONTRIBUTING.md
 
  
 
-Check out `good-first-issues` for contributing [here](https://github.com/cyberbuddy-manas/notes/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+Check out `good-first-issues` for contributing [here](https://github.com/rakshitmehra/hacktoberfest2022/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 </div>
 
 <br>
