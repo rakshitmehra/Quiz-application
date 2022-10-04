@@ -96,8 +96,8 @@ submitBtn.addEventListener('click', ()=>{
 		quiz.innerHTML = `
 		<h2>You answered ${score}/${quizData.length} questions corretly</h2>
 
-		<button onclick = "location.reload()">Reload </button>
-		`
+		// <button onclick = "location.reload()">Reload </button>
+							`
 	}
 }
 
