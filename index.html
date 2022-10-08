@@ -5,11 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="img/favicon.png" type="image/gif" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<title>QUIZ</title>
 </head>
 <body>
 
-	<div class="quiz-container" id="quiz">
+	<div class="quiz-container" id="quiz" data-aos="fade-up" data-aos-delay="200">
 		<div class="quiz-header">
 			<h1>Lets Play</h1>
 			<h2 id="question">Question Text</h2>
@@ -38,6 +39,10 @@
 		</div>
 	<button id="submit">Submit</button>
 	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
 
 	<script type="text/javascript" src="app.js"></script>
 </body>
