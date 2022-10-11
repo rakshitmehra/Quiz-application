@@ -7,8 +7,24 @@
         padding: 2rem;
     }
 
+    #question {
+        padding: 0;
+    }
+
     #submit {
         font-size: 1.5rem;
         padding: 1rem;
+    }
+
+    .quiz-header ul li {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.3rem;
+    }
+
+    input[type="radio"] {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
     }
 }
