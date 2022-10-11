@@ -5,7 +5,7 @@
 }
 body{
 	background-color: #b8c6db;
-	background-image: url(img/bg.gif);
+	background-image: url(assests/img/bg.gif);
 	background-size: cover;
 	font-family: 'popins', sans-serif;
 	display: flex;

@@ -1,6 +1,6 @@
 const quizData = [
 	{
-		question: "Q1 What does HTML stands for?",
+		question: "Q1 What does HTML stands for ?",
 		a: "Hypertext Markup Language",
 		b: "Hypertext Markdown Language",
 		c: "Hyperloop Machine language",
@@ -8,7 +8,7 @@ const quizData = [
 		correct: "a",
 	},
 	{
-		question: "Q2 Which tag is used to create checkbox?",
+		question: "Q2 Which tag is used to create checkbox ?",
 		a: "checkbox",
 		b: "<input type = checkbox",
 		c: "type = checkbox",
@@ -16,7 +16,7 @@ const quizData = [
 		correct: "b",
 	},
 	{
-		question: "Q3 Which of the following is the attribute that is used to set a global identifier for a microdata item?",
+		question: "Q3 Which of the following is the attribute that is used to set a global identifier for a microdata item ?",
 		a: "id",
 		b: "itemid",
 		c: "item",
@@ -24,7 +24,7 @@ const quizData = [
 		correct: "b",
 	},
 	{
-		question: "Q4Which of the tag is used to creates a number list? ",
+		question: "Q4 Which of the tag is used to creates a number list ? ",
 		a: "<LO>",
 		b: "<Il>",
 		c: "<LI> and <OL>",
@@ -32,7 +32,7 @@ const quizData = [
 		correct: "c",
 	},
 	{
-		question: "Q5  Datetime attribute is not related with ?",
+		question: "Q5 Datetime attribute is not related with ?",
 		a: "<del>",
 		b: "<time>",
 		c: "<ins>",
