@@ -27,4 +27,8 @@
         height: 15px;
         margin-right: 10px;
     }
+
+    .quiz-header ul li label {
+        width: 95%;
+    }
 }
