@@ -56,7 +56,7 @@ let score = 0
 
 loadQuiz()
 
-function loadQuiz(){
+function loadQuiz() {
 
 	deselectAnswers()
 	const currentQuizData = quizData[currentQuiz]
@@ -68,37 +68,37 @@ function loadQuiz(){
 	d_text.innerText = currentQuizData.d
 }
 
-function deselectAnswers(){
+function deselectAnswers() {
 	answerEls.forEach(answerEl => answerEl.checked = false)
 }
-function getSelected(){
+function getSelected() {
 	let answer
 	answerEls.forEach(answerEl => {
-		if(answerEl.checked){
+		if (answerEl.checked) {
 			answer = answerEl.id
 		}
 	})
 	return answer
 }
 
-submitBtn.addEventListener('click', ()=>{
+submitBtn.addEventListener('click', () => {
 	const answer = getSelected()
-	if(answer) {
-	if(answer===quizData[currentQuiz].correct){
-		score++
-	}
+	if (answer) {
+		if (answer === quizData[currentQuiz].correct) {
+			score++
+		}
 
-	currentQuiz++
+		currentQuiz++
 
-	if(currentQuiz < quizData.length){
-		loadQuiz()
-	} else{
-		quiz.innerHTML = `
+		if (currentQuiz < quizData.length) {
+			loadQuiz()
+		} else {
+			quiz.innerHTML = `
 		<h2>You answered ${score}/${quizData.length} questions corretly</h2>
 
-		// <button onclick = "location.reload()">Reload </button>
+		<button onclick = "location.reload()">Reload </button>
 							`
+		}
 	}
-}
 
 })
