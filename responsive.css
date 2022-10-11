@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    .quiz-container {
+        width: 85%;
+    }
+
+    .quiz-header {
+        padding: 2rem;
+    }
+
+    #submit {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
