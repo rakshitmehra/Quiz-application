@@ -1,0 +1,34 @@
+@media screen and (max-width: 600px) {
+    .quiz-container {
+        width: 85%;
+    }
+
+    .quiz-header {
+        padding: 2rem;
+    }
+
+    #question {
+        padding: 1rem 0;
+    }
+
+    #submit {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .quiz-header ul li {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.3rem;
+    }
+
+    input[type="radio"] {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    .quiz-header ul li label {
+        width: 95%;
+    }
+}
