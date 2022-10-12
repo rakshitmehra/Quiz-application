@@ -29,3 +29,12 @@
 29)Ancestors in Binary Tree
 30)Remove BST keys outside the given range
 31)Pair with given target in BST
+32)Rightview of a Binary Tree
+33)Leftview of a Binary Tree
+34)Same Tree
+35)Symmetric Tree
+36)Flatten Binary Tree to Linked List
+37)Binary Tree maximum sum path
+38)Invert Binary Tree
+39)Sum of left leaves
+40)Count Univalues Subtrees
