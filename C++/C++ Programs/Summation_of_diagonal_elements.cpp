@@ -1,21 +1,34 @@
-#include<iostream>
+
+// An efficient C++ program to 
+// find sum of diagonals
+#include <bits/stdc++.h>
 using namespace std;
-
-
-int main(){
-    int n;  //for order of square matrix
-    cin>>n;
-    int arr[n][n];
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++)
-            cin>>arr[i][j];
+  
+const int MAX = 100;
+  
+void printDiagonalSums(int mat[][MAX], 
+                       int n)
+{
+    int principal = 0, secondary = 0; 
+    for (int i = 0; i < n; i++) 
+    {
+        principal += mat[i][i];
+        secondary += mat[i][n - i - 1];        
     }
-
-    int leftDiagonal =0, rightDiagonal =0;
-    for(int i=0;i<n;i++){
-        leftDiagonal += arr[i][i];
-        rightDiagonal += arr[i][n-i+1];
-    }
-    cout<<"Sum of elements on right diagonal: "<<rightDiagonal<<endl;
-    cout<<"Sum of elements on left diagonal: "<<leftDiagonal<<endl;
+  
+    cout << "Principal Diagonal:" << 
+             principal << endl;
+    cout << "Secondary Diagonal:" << 
+             secondary << endl;
+}
+  
+// Driver code
+int main()
+{
+    int a[][MAX] = {{1, 2, 3, 4}, 
+                    {5, 6, 7, 8}, 
+                    {1, 2, 3, 4}, 
+                    {5, 6, 7, 8}};
+    printDiagonalSums(a, 4);
+    return 0;
 }
