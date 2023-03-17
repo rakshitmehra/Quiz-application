@@ -2,7 +2,7 @@ body {
     width:100vw;
     height:100vh;
     font-family: Arial, sans-serif;
-    background-color: #BBD6B8;
+    background-image: url("285674.jpg");
   }
 #content {
     display: flex;
