@@ -1,0 +1,30 @@
+What is the difference between interpreted and compiled languages?
+What is the difference between static and dynamic programming languages?
+What is the difference between procedural and object-oriented programming?
+What is a design pattern in programming?
+What is a software architecture?
+What is a software framework?
+What is the difference between a library and a framework?
+What is a software dependency?
+What is a code review?
+What is unit testing?
+What is integration testing?
+What is system testing?
+What is continuous integration?
+What is continuous delivery?
+What is continuous deployment?
+What is a microservice architecture?
+What is a monolithic architecture?
+What is the difference between synchronous and asynchronous programming?
+What is a thread?
+What is a process?
+What is a mutex?
+What is a semaphore?
+What is a deadlock?
+What is a race condition?
+What is a memory leak?
+What is garbage collection?
+What is a stack trace?
+What is a heap?
+What is a cache?
+What is a distributed system?
