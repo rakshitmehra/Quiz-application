@@ -24,7 +24,7 @@
     
     8. Make your PR
 
-    9. Congratulations⭐️! you made your contributon
+    9. Congratulations⭐️! Start Contributing
 
 
           
