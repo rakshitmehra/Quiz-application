@@ -1,0 +1,28 @@
+body {
+    width:100vw;
+    height:100vh;
+    font-family: Arial, sans-serif;
+    background-image:url("285674.jpg");
+  }
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+#but{
+    background-color: #BBD6B8;
+    border-radius: 100px;
+    padding:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 740px;
+    margin-bottom: 500px;
+    margin-top: 300px;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
