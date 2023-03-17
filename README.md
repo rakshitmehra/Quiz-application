@@ -1,4 +1,36 @@
 
+### Local environment Setup instructions:
+
+### Steps:
+*    1. Fork the this Repo
+    
+     2. Clone the this Repo
+*        cd git clone https://github.com/<Your_Github_Username>/KG-Foss-Quiz-Application
+    
+    3. Change the directory 
+*        cd KG-Foss-Quiz-Application
+    
+    4. Create a new branch
+*        git checkout -b <your_Branch_name>
+    
+    5. Make changes to the branch
+    
+    6. State your changes and commit
+*        git add .
+         git commit -m <"Your_message">
+    
+    7. Push your local commits to Remote repo 
+        git remote push -u origin master
+    
+    8. Make your PR
+
+    9. Congratulations⭐️! you made your contributon
+
+
+          
+
+
+
 #                                                    Hacktoberfest2022
 ![image](https://hacktoberfest.com/_next/static/media/opengraph.da6e44c0.png))
 
