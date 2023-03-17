@@ -2,7 +2,6 @@ import streamlit as st
 import hashlib
 import random
 
-# Define the list of questions and their answer options
 questions = [
     {
         "question": "What is the output of the following code: print(2+3*4)",
