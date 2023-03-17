@@ -53,7 +53,7 @@ ul li label{
     position: relative;
     width: 200px;
     height: 60px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(24, 5, 5, 0.1);
     border-radius:60px;
     display: flex;
     justify-content: center;
@@ -105,4 +105,7 @@ ul li label{
 }
 .button:hover:after{
     transform: translateX(170px) skewX(30deg);
+}
+.bid{
+    padding-left: 20%;
 }
