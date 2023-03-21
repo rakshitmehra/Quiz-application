@@ -1,0 +1,113 @@
+Bafile.cpp 
+----------
+
+1.The inclusion of unnecessary header files:
+The bits/stdc++.h header includes all the standard library headers, which can make the code run slower and take up more memory. It's better to only include the headers you need.
+
+2.No error handling for invalid input:
+If the user enters an invalid input (such as a non-integer), the program will behave unpredictably or crash. It's good practice to include error handling for such cases.
+
+3.Incorrect output for non-even loads:
+If the sum of the numbers is not evenly divisible by n, the program outputs -1, which is incorrect. Instead, it should output something to indicate that the load cannot be evenly distributed.
+
+3.Incorrect calculation of maxload:
+The code incorrectly calculates the maximum load on a processor. The diff variable is calculated as the difference between the current element and the calculated load, but the maxload variable is calculated using the absolute value of diff instead of the updated ans variable.
+-------------------------------------------------------------------------------------------------------------------------------------
+Bellman Ford - Shortest distance from Source having Negative Edge Weight but NO Negative Cycle.cpp
+----------------------------------------------------------------------------------------------------
+1.The function assumes that the graph is connected. If the graph is not connected, some nodes may not be reachable from the starting node, and the distance vector will not be updated for those nodes.
+
+2.The distance vector is initialized to MAXE, which is a very large value. However, if the graph has negative-weight cycles, the algorithm will not terminate and the distance vector will not be accurate.
+
+3.The outer loop iterates N-1 times, which is the maximum number of iterations needed to find the shortest path in a graph with no negative-weight cycles. However, if the graph has negative-weight cycles, the algorithm will not terminate even after N-1 iterations.
+
+4.The inner loop iterates over all the edges in every iteration of the outer loop, even if no updates were made in the previous iteration. This can be inefficient for graphs with a large number of edges.
+
+5.The algorithm does not detect negative-weight cycles. If the graph has a negative-weight cycle, the distance vector will not be accurate.
+
+6.The function does not return any information about the shortest path itself, only the distance vector. It may be useful to also return the path from the starting node to each node in the graph.
+----------------------------------------------------------------------------------------------------------------------------------------
+BubbleSort.cpp
+--------------------
+There is a potential bug in the sortArray() function:
+
+1.In the inner loop, the condition j < N-i should be j < N-i-1, because the last element in the array has already been sorted in the previous iterations.
+---------------------------------------------------------------------------------------------------------------------------------------diameter of binary tree .cpp
+----------------------------------
+1.The inclusion of the header file bits/stdc++.h is discouraged as it is not a standard header file and may not be available on all systems. It is better to include only the necessary header files.
+
+2.The function height is declared twice, once before diameter and once after it. It is better to declare the function only once before diameter.
+--------------------------------------------------------------------------------------------------------------------------------------
+hack1.cpp
+-----------
+1.It doesn't handle negative numbers, which could cause unexpected behavior if the user enters a negative value. It would be better to add a check for negative input and either reject it or convert it to a positive value before proceeding.
+
+2.The program could benefit from some user-friendly output. For example, it could print a message asking the user to enter a number, and it could print a message indicating whether the input is an Armstrong number or not.
+
+3.It uses the "using namespace std" directive, which is generally considered bad practice. It would be better to prefix standard library identifiers with "std::" instead.
+---------------------------------------------------------------------------------------------------------------------------------
+linked1.cpp
+----------------------------------
+This code contains several functions for linked list operations, but the main function is empty and does not contain any code. Therefore, the program will not execute anything. Here are some other issues in the code:
+
+1.insertAtTail function: The tail pointer should be passed by reference to update the tail of the list after inserting the new node. Otherwise, the tail pointer remains unchanged.
+
+2.insertAtPosition function: This function should check if the given position is out of bounds, i.e., if it is greater than the size of the list. If it is, then the node should be inserted at the tail of the list. Currently, the function assumes that the position is always valid.
+
+3.deleteNode function: This function should also check if the given position is out of bounds. Currently, the function assumes that the position is always valid.
+-----------------------------------------------------------------------------------------------------------------------------------------
+Linkedlist.cpp
+---------------
+I don't see any bugs in the code you provided. However, I can suggest some improvements and best practices that could help you write better code:
+
+1.Avoid using using namespace std in global scope. It is generally considered bad practice as it can lead to naming conflicts.
+
+2.Always initialize your pointers to NULL or nullptr when you declare them. This will help you avoid undefined behavior when you try to dereference them.
+
+3.It is a good practice to declare functions that do not modify the input parameters as const. This tells the compiler that these functions do not change the input and helps in code optimization.
+-----------------------------------------------------------------------------------------------------------------------------------
+Maximum_Sum_of_an_Hourglass.cpp
+---------------
+There doesn't seem to be any obvious bug in the code. However, here are some suggestions for improvement:
+
+1.Add a check to ensure that the grid has at least size 3x3 before iterating over it.
+
+2.Use const int n = grid.size() and const int m = grid[0].size() to avoid accidentally modifying these variables in the code.
+
+3.Consider using a separate function to calculate the sum of the 3x3 submatrix centered at (i,j) to make the code more readable and modular.
+------------------------------------------------------------------------------------------------------------------------------------
+calculator.cpp
+----------------------------------------------------------------
+functionality bugs. Here are some of the things that could be improved:
+
+1.Division by zero: The program does not check whether the second operand is zero before performing division. If num2 is zero, the program will produce a runtime error.
+
+2.Invalid input handling: The program does not handle invalid inputs well. For example, if the user enters a non-numeric value for num1 or num2, the program will produce an error.
+
+3.Limited input range: The program only works with floating-point numbers. If the user enters an integer or a very large or very small number, the program may produce unexpected results or errors.
+
+3.Lack of error handling: If an error occurs, the program simply outputs an error message and terminates. A more robust program would provide the user with a way to recover from the error or gracefully exit the program.
+
+3.Code redundancy: There is some code redundancy in the switch statement. For example, the code for addition and subtraction is very similar, so it could be refactored to reduce duplication.
+
+These are just a few potential issues that could be improved in the program. Overall, the code appears to be functional and does what it is designed to do, but there is always room for improvement.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+UI can be created according to numbered keyboard which is easier to use 
+
+Memory report for calculator.cpp:
+The only memory usage comes from the program's stack, which is used to store local variables such as op, num1, and num2, as well as the return address for the main function.
+
+Since the program does not use any dynamically allocated memory or pointers, there is no need to worry about memory leaks or other memory-related issues. Overall, the memory usage of this program is minimal and should not be a concern.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------facerecognition.py
+----------------------
+Bug Report:
+
+There are no apparent bugs in this code. However, it is possible that the Haar Cascade classifier may not detect faces accurately in some lighting or environmental conditions, leading to false positives or false negatives.
+
+Functionality Report:
+
+The program works as intended and successfully detects faces in the video stream from the default camera.
+The program displays the video stream in a window titled "My Window" and draws a rectangle around each detected face.
+The program allows the user to quit by pressing the 'q' key.
+The program releases the camera and closes all windows when the user quits.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
