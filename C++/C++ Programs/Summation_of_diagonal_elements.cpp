@@ -1,34 +1,50 @@
+#include <stdio.h>
 
-// An efficient C++ program to 
-// find sum of diagonals
-#include <bits/stdc++.h>
-using namespace std;
-  
-const int MAX = 100;
-  
-void printDiagonalSums(int mat[][MAX], 
-                       int n)
-{
-    int principal = 0, secondary = 0; 
-    for (int i = 0; i < n; i++) 
-    {
-        principal += mat[i][i];
-        secondary += mat[i][n - i - 1];        
-    }
-  
-    cout << "Principal Diagonal:" << 
-             principal << endl;
-    cout << "Secondary Diagonal:" << 
-             secondary << endl;
-}
-  
-// Driver code
 int main()
 {
-    int a[][MAX] = {{1, 2, 3, 4}, 
-                    {5, 6, 7, 8}, 
-                    {1, 2, 3, 4}, 
-                    {5, 6, 7, 8}};
-    printDiagonalSums(a, 4);
-    return 0;
+
+	int i, j, m = 3, n = 3, a = 0, sum = 0;
+	int matrix[10][10];
+	
+	// if both rows and columns are equal then it is
+	// possible to calculate diagonal sum
+	if (m == n) {
+		
+		// entering the coefficients of the matrix
+		for (i = 0; i < m; ++i) {
+			
+			for (j = 0; j < n; ++j) {
+				
+				scanf("%d", &matrix[i][j]);
+			}
+		}
+		// printing the input matrix
+		printf("The matrix is \n");
+		
+		// iterates number of rows
+		for (i = 0; i < m; ++i) {
+			
+			// iterates number of columns
+			for (j = 0; j < n; ++j) {
+				printf(" %d", matrix[i][j]);
+			}
+			printf("\n");
+		}
+		for (i = 0; i < m; ++i) {
+			
+			// calculating the main diagonal sum
+			sum = sum + matrix[i][i];
+			
+			// calculating the off diagonal sum
+			a = a + matrix[i][m - i - 1];
+		}
+		// printing the result
+		printf("\nMain diagonal elements sum is = %d\n",sum);
+		printf("Off-diagonal elements sum is = %d\n", a);
+	}
+	else
+		// if both rows and columns are not equal then it is
+		// not possible to calculate the sum
+		printf("not a square matrix\n");
+	return 0;
 }
