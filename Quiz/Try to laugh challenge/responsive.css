@@ -1,0 +1,50 @@
+<<<<<<< HEAD
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .heading h3 {
+        padding: 1rem 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    .container p {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+    }
+
+    .joke {
+        margin: 1rem auto;
+        font-size: 1.6rem;
+    }
+=======
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .heading h3 {
+        padding: 1rem 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    .container p {
+        font-size: 1.6rem;
+        padding-top: 1rem;
+    }
+
+    .joke {
+        margin: 1rem auto;
+        font-size: 1.6rem;
+    }
+>>>>>>> 376f8e675e9597e48ed367b554fa7be5cd7c8362
+}
